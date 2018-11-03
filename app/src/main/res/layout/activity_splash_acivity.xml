@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.daohuyen.dell.store_cosmetics.view.SplashAcivity">
+    <LinearLayout
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:paddingTop="100dp"
+        android:background="#80dad3d3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/logop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingTop="5dp"
+            android:textColor="#7b6d6d"
+            android:maxLines="2"
+            android:text="Đến SunRise cùng mua sắm nhé"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:paddingTop="5dp"
+        android:textColor="#7b6d6d"
+        android:text=" SunRise Shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--<ProgressBar-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/progress"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:max="100"-->
+        <!--android:progress="0"/>-->
+    <!--<TextView-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@id/img_logo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Book Store"-->
+    <!--android:textColor="#f4f00b"-->
+    <!--android:textSize="40sp"/>-->
+</FrameLayout>

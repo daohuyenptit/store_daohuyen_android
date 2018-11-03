@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_product_cart">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/pading_left"
+                android:background="#FFF">
+                <ImageView
+                    android:id="@+id/img_product_detail"
+                    android:src="@drawable/logoapp"
+                    android:layout_width="86dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="8dp"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/tv_name_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Mỹ phẩm"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_toRightOf="@+id/img_product_detail"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_cost_product"
+                    android:text="1.000.000 Đ"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_red_500"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_product"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_toRightOf="@+id/img_product_detail"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginBottom="@dimen/view_margin"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Số lượng :"
+                    android:ellipsize="end" />
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/img_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_subgray"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txt_number"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="6"
+                        android:editable="false"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <ImageButton
+                        android:id="@+id/img_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_addgray"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.NestedScrollView>
